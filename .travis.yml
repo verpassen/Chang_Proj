@@ -24,7 +24,7 @@ script:
 
 
 deploy:
-  github_token: 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
+  github_token: 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
   keep_history: true
   on:
     branch: main
