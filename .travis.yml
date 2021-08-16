@@ -1,35 +1,23 @@
-os:
-	-	linux
-dist: xenial
-
 language: python
 
 services:
-
+  - docker 
   ports:
     - "1523:1523"
 
 before_install:
-  - sudo apt-get update
-  - pip install -U pip
-  - pip install -U setuptools
-  - pip install -r requirements.txt
-
-install:
-  - pip install -r requirements.txt
-
+  - docker pull 
+ 
 
 script:
+  - pip install -r requirements.txt
 	-	python -m pytest -v 
 
 
 deploy:
+  provider: pages
   github_token: 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
   keep_history: true
   on:
-    branch: main
-
-addons:
-    apt:
-      packages:
-        - docker-ce
+    branch: master
+ 
