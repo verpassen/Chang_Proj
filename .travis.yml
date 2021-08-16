@@ -1,0 +1,35 @@
+os:
+	-	linux
+dist: xenial
+
+language: python
+
+services:
+
+  ports:
+    - "1523:1523"
+
+before_install:
+  - sudo apt-get update
+  - pip install -U pip
+  - pip install -U setuptools
+  - pip install -r requirements.txt
+
+install:
+  - pip install -r requirements.txt
+
+
+script:
+	-	python -m pytest -v 
+
+
+deploy:
+  github_token: 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
+  keep_history: true
+  on:
+    branch: main
+
+addons:
+    apt:
+      packages:
+        - docker-ce
