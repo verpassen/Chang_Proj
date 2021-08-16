@@ -1,9 +1,5 @@
 language: python
 sudo: required
-services:
-  - docker 
-  ports:
-    - "1523:1523"
 
 before_install:
   - pip install -U pip
@@ -13,11 +9,10 @@ script:
   - pip install -r requirements.txt
 	-	python -m pytest -v 
 
-
 deploy:
   provider: pages
   github_token: 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
   keep_history: true
   on:
-    branch: master
+    branch: main
  
