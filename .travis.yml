@@ -6,7 +6,6 @@ services:
     - "1523:1523"
 
 before_install:
-  # - docker pull 
   - pip install -U pip
   - pip install -U setuptools
 
