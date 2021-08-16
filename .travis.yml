@@ -1,13 +1,14 @@
 language: python
-
+sudo: required
 services:
   - docker 
   ports:
     - "1523:1523"
 
 before_install:
-  - docker pull 
- 
+  # - docker pull 
+  - pip install -U pip
+  - pip install -U setuptools
 
 script:
   - pip install -r requirements.txt
