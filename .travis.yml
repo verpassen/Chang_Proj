@@ -9,11 +9,5 @@ script:
   - pip install -r requirements.txt
 	-	python -m pytest -v 
 
-deploy:
-  provider: pages
-  github_token: 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
-  keep_history: true
-  on:
-    branch: main
  
  
