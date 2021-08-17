@@ -11,8 +11,9 @@ script:
 
 deploy:
   provider: pages
-  github_token: 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
+  github_token: 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
   keep_history: true
   on:
     branch: main
+ 
  
