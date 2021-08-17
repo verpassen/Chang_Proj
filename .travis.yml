@@ -10,4 +10,4 @@ before_install:
 
 script:
   - pip install -r requirements.txt
- 
+  - python app.py
