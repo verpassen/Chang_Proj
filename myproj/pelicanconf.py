@@ -3,9 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Brent Chang'
-SITENAME = "Brent's BLog"
+SITENAME = "Write something down"
 SITEURL = ''
-
+THEME = 'themes/clean'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Taipei'
