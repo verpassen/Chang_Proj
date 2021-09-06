@@ -1,9 +1,0 @@
-myproj/pelican/bin/*
-myproj/pelican/share/*
-myproj/pelican/lib63/*
-myproj/pelican/lib/*
-myproj/pelican/include/*
-myproj/pelican/themes/*
-myproj/pelican/Makefile
-myproj/pelican/content/*
-myproj/pelican/_pycache_/*
