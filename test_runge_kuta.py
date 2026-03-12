@@ -9,7 +9,7 @@ def analytical_sol(t,v):
  return t**3 + t
  
 t=0
-h=1 
+h=.2 
 v_init= 0 
 
 k_1 = myfun(t,v_init) 

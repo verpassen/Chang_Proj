@@ -4,12 +4,13 @@ import numpy as np
 # import seaborn as sns
 from numpy import sin,cos
 import matplotlib.pyplot as plt 
-
+import matplotlib
+matplotlib.use('Agg')
 # file_path = './data/test.mp4'
-# file_path = './data/AB3-1.avi'
+file_path = './data/A-u.avi'
 # file_path = './data/img/img_69.jpg'
-file_path = './data/img/img_127.jpg'
-file_path2 = './data/img/img_173.jpg'
+# file_path = './data/img/img_127.jpg'
+# file_path2 = './data/img/img_173.jpg'
 # 有 二值化過的圖片結果會比較好, 至少看起來知道是什麼
 
 b_ellipsefit = False
@@ -23,8 +24,9 @@ def find_contour(img,thres_img):
 	return contours
 
 def from_img(file):
-	img = cv2.imread(file)
-	gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+	img = cv2.imread(file) #
+	# gray = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR) #
+	gray = img 
 	height , width = gray.shape
 	df_Matrix = np.zeros((height,width)) 
 	ret , thres_img = cv2.threshold(gray,210,255,cv2.THRESH_BINARY)
@@ -123,13 +125,13 @@ def from_video(file):
 
 
 # test for video 
-# df_Matrix = from_video(file_path)
+df_Matrix = from_video(file_path)
 # 
 # test for img 
-df_Matrix = from_img(file_path)
+# df_Matrix = from_img(file_path)
 # print(df_Matrix.shape)
 
-df2 = from_img(file_path2)
+# df2 = from_img(file_path2)
 
 while(1):
 	# cv2.imshow('thres image',df_Matrix[:,:,0])
