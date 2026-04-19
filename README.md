@@ -1,31 +1,33 @@
-## Chang_Proj.
-Collect some python codes that I tried 
+### Chang_Proj.
+Archive some python scripts that I wrote 
 
-## Heat Transfer 
-- heat transfer.py
+#### Folder architecture
+- Algorithm 
+- course 
+- Nice gui
+- Neural network Fluiddynamics
+- test
+ 
+#### course 
+record some script to simulate the heat transfer and fluid flow dynamics concept 
+ex. blasius equation, heat transfer within boundary layer
 
-## OpenCV 
-- 
+#### Nice gui 
+create an web-based interface to load the json file and plot the data. 
+The target is to visualization of Siemens edge data.
+Therefore, the json format is fixed not general.  
 
-## Algorithm 
-- test_runge_kuta.py
+#### Notes
+nee to be fixed 
 
-
-## PyQt
-- prac_qttree.py
-
-
-## records 
-The codes do not work properly. 
-
-### Need to be fixed 
-- test_runge_kuta.py
+- [ ] test_runge_kuta.py
 only one time calculate 
 add the loop into it to find the final anwer 
 
-- heat transfer.py
+- [ ] heat transfer.py
 add the scenario of the problem 
 and use the pixture / diagram to demonstrate the result. 
 
-- load_img_video.py
+- [ ] load_img_video.py
 the img and video loading should be fixed 
+
